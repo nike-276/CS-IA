@@ -1,13 +1,15 @@
 import { useNavigate } from "react-router-dom";
 
-const SearchButton = (props: any) => {
+const searchButton = (props: any) => {
   const navigate = useNavigate();
 
   return (
     <>
-      <button onClick={() => navigate("/search")}>Home</button>
+      <button onClick={() => navigate("/search", { replace: true })}>
+        Search
+      </button>
     </>
   );
 };
 
-export default SearchButton;
+export default searchButton;

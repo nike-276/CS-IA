@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { createBrowserRouter } from "react-router-dom";
+import Home from "./home/page";
+import Search from "./search/page";
+import Login from "./login/page";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
