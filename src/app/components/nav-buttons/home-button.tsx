@@ -1,13 +1,13 @@
 import { useNavigate } from "react-router-dom";
 
-const homeButton = () => {
+const HomeButton = () => {
   const navigate = useNavigate();
 
   return (
     <>
-      <button onClick={() => navigate("/")}>Home</button>
+      <button onClick={() => navigate("/home")}>Home</button>
     </>
   );
 };
 
-export default homeButton;
+export default HomeButton;
